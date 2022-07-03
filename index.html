@@ -14,11 +14,8 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body data-body>
     <!-- Шапка профиля -->
-
-      
-
       <header class="header">
         
         <nav class="header-container container">
@@ -70,13 +67,28 @@
         <section class="hero">
           <div class="container hero-container">
           
-         
-            <h1 class="hero-title">
+          <h1 class="hero-title">
              Эффективные решения для вашего бизнеса
             </h1>
-            <button class="hero-btn btn" type="button">Заказать услугу</button>
+            <button class="hero-btn btn" type="button" 
+            data-modal-open
+            >Заказать услугу</button>
           </div>
         </section>
+
+
+        <!-- Model window -->
+         
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="modal-close-btn" type="button" 
+            data-modal-close>
+              <svg width="11px" height="11px">
+               <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
         
 
       <!-- Особенности компании -->
@@ -152,18 +164,18 @@
 
           <ul class="does-list list">
             <li class="does-item">
-              
-                <img class="img-does" src="./images/box1.jpg" alt="руки на клавиатуре" width="370" height="294px" />
-                <h3 class="does-text">Десктопные приложения</h3>
-                
+              <img class="img-does" src="./images/box1.jpg" alt="руки на клавиатуре" width="370"/>
+              <p class="does-text">Десктопные приложения</p>
             </li>
   
             <li class="does-item">
               <img src="./images/box2.jpg" alt="телефон в руках" width="370" />
+              <p class="does-text">Мобильные приложения</p>
             </li>
   
             <li class="does-item"> 
               <img src="./images/box3.jpg" alt="планшет в руках" width="370" />
+              <p class="does-text">Дизайнерские решения</p>  
             </li>
           </ul>
         </div>  
@@ -517,5 +529,9 @@
       </div>
       
     </footer>
+
+     <!-- Java Script -->
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
