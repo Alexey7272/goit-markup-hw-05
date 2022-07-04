@@ -162,7 +162,7 @@ body {
   color: var(--accent-color);
 }
 
-  .current:before {
+.current:before {
     content: "";
     position: absolute;
     bottom: 0;
